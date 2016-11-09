@@ -1,0 +1,8 @@
+
+
+Images should be:
+
+* Clear and in focus. 
+* Of a reasonable size (e.g. roughly 1000 pixels across). Not over-sized and not tiny.
+* Compressed fairly heavily to save space. e.g. 50% JPG compression in Gimp.
+* Use descriptive file names that start with your Lab's initials. Avoid spaces or weird characters. 
