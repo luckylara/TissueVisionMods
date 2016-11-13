@@ -1,0 +1,232 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{gensymb}
+\usepackage{chemmacros}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Universit\"{a}t Basel, Mrsic-Flogel Lab} \\ [25pt] 
+\horrule{0.5pt} \\[0.2cm] % Thin top horizontal rule
+\huge Sample Preparation for Serial 2-Photon Tomography
+\horrule{1.5pt}\\ % Thick bottom horizontal rule
+}
+
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+The following is the protocol for embedding a sample in agar in preparation for serial two-photon tomography. 
+This follows the methods of Ragan, \textit{et al.}, 2011. 
+The protocol describes preparation of solutions, embedding the sample in agar, covalently bonding the sample to the agar, and preparation for imaging of the sample.
+The purpose of the covalent bonding is to cause the agar to adhere to the surface of the sample via a redox reaction between \ch{NaBH4} and \ch{NaIO4}. 
+This results in improved sectioning quality and makes it more likely that sectioned slices remain attached to the agar sheet after removal from the block. 
+
+
+\section{Material list}
+\begin{enumerate}
+\item Agarose (Sigma, Type 1, \#A6013 or \#A0169).
+\item \ch{NaIO4} (Sigma, \#S1878, MW 213.89 g/mol); light-sensitive, hygroscopic, toxic.
+\item 100~mM Phosphate buffer (4.8g/L Monobasic sodium phosphate monohydrate, 17.2g/L Dibasic sodium phosphate heptahydrate\footnote{Values for anhydrous salts are 4.2~g and 9.2~g respectively.}. You can also make up the solution in a 2~L flask and work at a concentration of 50~mM (we usually do this). 
+It should come to about \pH = 7.4.
+Keep at room temperature until needed. 
+Refrigerated PB will out-gas as it warms and bubbles may form on the objective. 
+\item Borax (\ch{Na2B4O7} * 10\ch{H2O}; Sigma \#221732, MW 381.37 g/mol); 0.05 M solution = 19 g/L.
+\item Boric Acid (\ch{H3BO3} , Sigma \#B6768, MW 61.83 g/mol); 0.05 M = 3 g/L.
+\item \ch{NaBH4} (Sigma \#452882, MW 37.83 g/mol); toxic, use in chemical hood.
+\item Stir plate/stir bars.
+\item Vacuum suction with $\ge 0.2 \mu m$ filters.
+\item Aluminum foil or box to protect solutions from light. 
+\item Large forceps for holding the sample. 
+\item Magnets for adhering slide to steel plate in water bath. We use 20~mm x 10~mm x 2~mm (Q-20-10-02-N from www.supermagnete.ch).
+      These magnets have a pull force of about 2 kg. 
+      Don't go stronger than this: it can pull the blade downwards towards the end of the run.
+\item Glass microscope slides with coarse writing surface on one end
+\item Epoxy (5 minute Araldite or 5 minute Henkel 1365868).
+\item Superglue (water resistant, LOCTITE 1647358 and LOCTITE 454 both work).
+\end{enumerate}
+
+
+\section{Make oxidised agarose}
+Make (4.5\%) agarose solution in 10 mM \ch{NaIO4}, by mixing the following in a 250~mL beaker. You 
+will not melt the agar during this stage. The purpose of this stage is to generate oxidised agarose
+that will later undergo a redox reaction with the surface of the sample.
+\begin{itemize}
+\item 2.25~g agarose of the type specified above (these are known polymerize after priming). 
+\item 0.21~g \ch{NaIO4}.
+\item 100~ml of PB. 
+\item Gently stir for 2-3 hours at RT in hood, protect from light.
+If go over three hours the agarose may polymerize poorly and become brittle.
+\item Filter the solution with vacuum suction and a $\ge 0.2 \mu m$ filter.
+\item Wash out all remaining \ch{NaIO4} with PB. 
+We use three or four washes x 50~mL per wash and wait for all the PB to pass through the filter before applying the next wash.
+\item Remove the filter from suction, then re-suspend  the agarose in 50~mL of PB.
+\item Store the oxidized agarose in the fridge in a light-protected container for up to about two or three weeks.
+\end{itemize}
+
+ 
+
+\section{Prepare borate/borohydride solution}
+First create a stock of borate buffer by adding 19 g borax and 3 g boric acid to 1 liter of water. 
+Stir until dissolved then adjust the \pH to 9.0--9.5 with 1~M \ch{NaOH}.
+You can keep the solution indefinitely at room temperature and use it for the following steps.
+To make the borate/borohydride solution you will:
+\begin{itemize}
+\item Heat 100 ml of borate buffer to 40\degree C.
+\item Add 0.2 g \ch{NaBH4} in fume hood. \ch{CO2} will be released.
+\item Stir for 15--30 min and protect the bottle from light.
+\item Leave the bottle in the hood overnight with the cap over the bottle but not tightened due to gas formation.
+Tighten cap next morning. 
+Avoid using the solution the same day as it is made as gas pockets can form inside the agarose, creating a spongy structure that sections poorly.
+\item The borate/borohydride solution can be stored up to 1 week, but fresher solution will be better for bonding the sample to the agar.
+\end{itemize}
+
+
+\section{Embed the sample in agar}
+The sample will now be embedded in an agar block to allow it to be cut. 
+There are various ways of conducting this process.
+We employ a reusable metal mould and support the sample in the middle of it using two thin retractable metal supports.
+We do this because we work with brains and this makes it easy to maintain consistent positioning of the sample across experiments.
+Our procedure is as follows:
+
+\begin{itemize}
+\item Maintain the sample in 50~mM PB (or 100~mM, if you prefer) for 24 hours in order for it to equilibrate with the osmolarity of the cutting medium. 
+This must be done before embedding. 
+\item Remove the fixed sample from the PB and rest on a folded KimWipe, gently drying the sample. 
+\item Now might be a good time to remove any external membranes still present on the sample. 
+The embedding will be more effective if the agar bonds directly to the sample rather than surrounding sheath tissue. 
+Membranous sheath often fails to be cut by the blade and ends up between the objective and the sample surface, causing pronounced imaging artifacts. 
+\item Support the ventral brain on two metal supports. Place metal mould around the brain. (PHOTOS TO COME)
+\item Shake the oxidised agarose suspension and pour out about 10~mL into a small beaker.
+\item Heat agarose in a microwave until it boils.
+This usually occurs quickly. 
+You can stir with a thermometer: about 80\degree C is normally sufficient.
+\item Use a thermomemter to monitor the temperature of the agarose. When the agarose reaches about 60\degree C, 
+slowly fill the embedding mould. 
+Fill steadily and keep a support, such as forceps, above the sample to stop it from floating away from the supports.
+\item Wait for the agar to set.
+\item If necessary, you can trim away agar with a razor blade to ensure that the blade will be parallel to the coronal plane during sectioning.
+Note that for obtaining coronal sections from brains it works best to cut from cerebellum to olfactory bulb. 
+\item In principle the embedded brain can be stored in PB at 4\degree C for some time, however we generally use embedded brains immediately. 
+\end{itemize}
+
+
+\section{Bonding of the sample to the agar}
+In this step we perform the redox reaction to covalently bind the oxidised agar block to the surface of the sample. 
+If the following procedure is successful, the agarose-tissue sections will curl as they are sliced.
+
+\begin{itemize}
+\item Place the embedded brain in a 50~mL beaker.
+\item Cover the sample with the borohydride/borate solution.
+\item Leave in solution \textbf{either} overnight at 4\degree C \textbf{or} at room temperature for 2--3 hours. 
+You should not shake the sample during this time. 
+\item Once bonded, treat the sample gently.
+\end{itemize}
+
+
+\section{Mount block on imaging slides}
+\textit{Making a magnetic slide}
+
+\begin{itemize}
+\item Thoroughly mix the two-part epoxy on a weighing boat.
+The epoxy used should be water resistant (not all epoxy is).
+Use 5 minute epoxy. 
+Waiting hours for powerful magnets to glue to slides is annoying.
+\item The sample will eventually be glued to the rough writing surface.
+You will glue the magnet to the smooth surface.  
+\item Using a plastic tool, apply epoxy to the reverse side of the writing surface. 
+\item Place the magnet onto the epoxy and press down gently. 
+\item We generally make several slides at once, but the magnets are very powerful so the slides should be prepared a few cm away from each other to make sure the magnets don't drift as the epoxy dries. 
+\item Despite using 5 minute epoxy, you should ideally wait at least an hour (of not overnight) for the glue to thoroughly dry. 
+This decreases the likelihood of the epoxy softening and coming away during the long imaging procedure.
+\end{itemize}
+
+
+\textit{Attaching the agarose block to the slide}
+\begin{itemize}
+\item Remove the block from the borohydride solution, and rinse with PB to remove excess solution on the
+sides of the block.
+\item Dry the block with a KimWipe or similar. 
+\item Apply a liberal drop of superglue to the writing (rough) surface of the magnetic slide, 
+and place the block on the drop. 
+\textit{Caution:} avoid the super-glue spilling over the edge of the block and spreading up the side. 
+If the blade hits superglue it will fail to cut and likely push the sample off the slide. 
+\item Allow the superglue to dry for 5 to 10 minutes. 
+\item Do not leave the block out of solution for more than about an hour.
+The agarose is mostly water so will evaporate and shrink.
+\end{itemize}
+
+
+\textit{Setting up the sample for imaging}
+\begin{itemize}
+\item Place the slide on the metal block at the bottom of the imaging tray. 
+Do this carefully with two hands, one hand on either side of the slide.
+The the magnets are strong enough to snap the slide hard into position and snap it in the process. 
+\item Once at the microscope, fill the sectioning tray with PB. 
+The correct quantity of fluid is when the water level reaches the mid-point of the short upper section of the original cutting bath that came wit the system. 
+i.e. to within about 1 cm of the top of the bath.
+If the tray is not filled sufficiently you will be unable to see the position of the laser beam on the sample surface from the left hand face of the sample bath.
+This is necessary to set up the acquisition.
+\item Remember to use PB stored at room temperature.
+\item Lower microscope $z$-stage and carefully place the filled tray in the center of the holder. 
+If securing the bath in place with a thumb-screw then tighten until you just start to feel mild resistance. 
+Don't over-tighten. 
+\item Be careful about re-using slides.
+Water has a tendency to break down the glue and so it can fail on later re-use even if the slide has been allowed time to dry. 
+\end{itemize}
+
+
+
+
+\end{document}
