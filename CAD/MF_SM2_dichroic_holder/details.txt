@@ -1,0 +1,12 @@
+SM2 dichroic holder for TissueVision
+
+Designed by Devon Cowan, Mrsic-Flogel Lab, Basel 2016
+
+
+Printer: Designed for, and printed on an Ultimaker 2+ 3D printer. Other printers may require some tweaking to the scaling, or dimensions to function as intended.
+
+Material: PLA
+
+Print settings: 0.4 mm nozzle with the "Fast Print" profile (0.15 mm layer height). "Recommended" settings are fine with your infill level of choice. We print with dense infill to add some rigidity. You could of course print at higher resolution, and solid infill, but it's functionally no better - it simply costs more time.
+
+Additional hardware: The part is designed to accept an M2 screw without tapping, and a plastic M2 washer which will hold the filter down. The first time you thread a screw into the hole there will be some resistance, so put a screw through it before attempting to mount a filter to minimize risk of damage to the filter from slips. 
