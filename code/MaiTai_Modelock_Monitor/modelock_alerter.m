@@ -13,8 +13,9 @@ function modelock_alerter(varargin)
 %
 %
 % Hardware wiring instructions
-% - In the right of the BNC 2090A break-out board, connect User 2 to PFI15 using a solid-core wire
-%   (22AGW is good). You can now access PFI15 via the User 2 BNC connector. 
+% - In the right of the BNC 2090A break-out board (on our system this connected to an PCIe NI-6259), 
+%   connect User 2 to PFI15 using a solid-core wire (22AGW is good). You can now access PFI15 via 
+%   the User 2 BNC connector. 
 % - Connect User 2 to a digital output on a separate NI device that will be driven by this program. 
 %   An NI USB-6008 is a good choice.
 %
