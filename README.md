@@ -1,5 +1,9 @@
 # TissueVision Mods and Protocols
 
+<p align="center">
+<img src="https://github.com/BaselLaserMouse/TissueVisionMods/blob/master/images/Composite_01.jpg" alt="pretty composite image" />
+</p>
+
 This repository is for sharing information on running and improving the TissueVision microscopy system.
 It contains a simple GUI for pausing acquisition if the laser loses modelock. There are Latex documents
 containing protocols for embedding samples and for running the TissueVision microscope. These are supplied
