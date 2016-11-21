@@ -15,3 +15,5 @@ as PDFs here:
 ### The Wiki
 In addition there is a bunch of information on protocols and hardware modifications on [the wiki](https://github.com/BaselLaserMouse/TissueVisionMods/wiki).
 
+### Stitching
+We have also shared [StitchIt](https://github.com/BaselLaserMouse/StitchIt), which is our software pipeline for image assembly. 
